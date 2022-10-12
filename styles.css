@@ -1,0 +1,393 @@
+/*SIDE BAR*/
+.sidebar {
+  width: 100px;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  background-color: lightblue;
+  padding: 5px;
+  }
+  
+.btn {
+  padding: 8px;
+  margin: 2px;
+  font-size: 16px;
+  display: block;
+  background-color: #47bcd4;
+  }
+
+  .sidebar a:hover {
+    color: #000000;
+  }
+
+/*SECTION 1*/
+#profile-img {
+  border-radius: 50%;
+  height: 35% !important;
+  margin: auto !important;
+  display: block !important;
+  position: absolute;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  top: 10%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #718ab2;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+.text_animation {
+    position: relative;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+       -225deg,
+       #231557 0%,
+       #44107a 29%,
+       #ff1361 67%,
+       #fff800 100%
+     );
+     background-size: auto auto;
+     background-clip: border-box;
+     background-size: 200% auto;
+     color: #fff;
+     background-clip: text;
+     text-emphasis-color: transparent;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.basic-details{
+    margin: 20% 80px 20px 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media img{
+    margin-top: 20px;
+    height: 35px;
+    width: auto;
+}
+
+a {
+    color: white;
+}
+
+/*SECTION 2*/
+.card{
+display: flex;
+position: relative;
+flex-wrap: wrap;
+align-items: center;
+background: #474747;
+width: 300px;
+height: 120px;
+border: 0;
+box-shadow: 8px 2px 21px
+rgba(8, 8, 8, 0.25);
+transition: all 1.5s ease-in-out;
+margin: 5px;
+float: left;
+} 
+
+.corner{
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 0;
+border-top: 50px solid #232323;
+border-right: 50px solid transparent;
+}
+
+.card h3{
+font-family: sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20x;
+letter-spacing: 1px;
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 20px;
+color: #ffffff;
+text-align: center;
+}
+
+.card p{
+font-family: sans-serif;
+font-style: normal;
+font-weight: 708;
+font-size: 15px;
+letter-spacing: 1px;
+color: #ffffff;
+opacity: 0;
+transition: opacity 1.1s ease-in-out;
+padding: 5px 20px 100px
+}
+
+.card i{
+    color:rgb(50, 222, 235);
+}
+
+/*
+.right-top-corner{
+  left: auto;
+  right: 8;
+  border-top: 58px solid #232323;
+  border-right: 58px solid
+  transparent;
+  transform: rotate(90deg);
+  }
+*/
+.card:hover{
+width: 300px;
+height: 250px;
+}
+
+.card:hover p{
+opacity: 1;
+}
+
+.section {
+    background-color: #daaaf0;
+    color: #00102A;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    padding: 20px 80px;
+    box-shadow: 8px 2px 21px #232323;
+}
+
+.section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* SECTION 3*/
+.Lcard {
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  float: left;
+  min-height: max-content;
+}
+.Lcard-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform .75s;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  outline-offset: -8px;
+}
+.Lcard:hover .Lcard-header img{
+  transform: scale(1.15);
+}
+.Lcard-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+}
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.Lcard-body p {
+  font-size: 13px;
+  margin: 0 0 25px;
+  text-align: justify;
+}
+.Logo {
+  display: flex;
+  margin-top: auto;
+}
+
+.Logo img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.company-info h5 {
+  margin: 0;
+}
+.company-info small {
+  color: #545d7a;
+}
+
+/* SECTION 4*/
+.skill-bar-container {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    margin-bottom: 0.5em;
+}
+.skill-bar {
+    display: block;
+    border-radius: 4px;
+    height: 25px;
+}
+
+.level1 { width: 20%; background-color: #d7edfa}
+.level2 { width: 40%; background-color: #c8e7f8}
+.level3 { width: 60%; background-color: #b9e0f7}
+.level4 { width: 80%; background-color: #a9d9f5}
+.level5 { width: 100%; background-color: #9ad3f3 } 
+
+.skill-name {
+   position: absolute;
+   top: 5px;
+   left: 10px;
+   color: #333;
+   font-weight: 600;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media only screen and  (max-width: 600px){
+/*SIDEBAR FOR MOBILE VIEW*/
+.sidebar {
+  width: 17%;
+}
+
+.btn {
+  padding: 5px;
+  margin: 2px;
+  font-size: 13px;
+}
+
+  /*SECTION 1 FOR MOBILE VIEW*/  
+.section h1{
+  font-size: x-large;
+}
+.section{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  #profile-img {
+    border-radius: 50%;
+    height: 23% !important;
+    position: absolute;
+    top: 5%;
+  }
+  .basic-details {
+    margin: 27% 80px 15px 80px;
+  }
+  .basic-details span {
+    display: inline-block;
+  }
+
+/*SECTION 2 FOR MOBILE VIEW*/
+    .card {
+      width: 100%;
+      min-height: 100px;
+    }    
+    
+    .card:hover{
+    width: 100%;
+    }
+
+    .card:hover p{
+    opacity: 1;
+    }
+
+/*SECTION 3 FOR MOBILE VIEW*/
+.Lcard {
+  width: 100%;
+}
+
+.Lcard-header img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.Lcard-body {
+  padding: 10px;
+  min-height: 100px;
+}
+
+.tag {
+  font-size: 10px;
+}
+
+.Lcard-body h4{
+  font-size: smaller;
+}
+.Lcard-body p {
+  font-size: 11px;
+  margin: 0 0 20px;
+}
+
+.Logo img {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+.company-info h5 {
+  margin: 0;
+  font-size: smaller;
+}
+.company-info small {
+  color: #545d7a;
+  font-size: x-small;
+}
+
+}
