@@ -1,5 +1,25 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(118, 118, 190);
+}
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
 /*SIDE BAR*/
 .sidebar {
   width: 100px;
@@ -48,7 +68,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #718ab2;
 }
 
 @keyframes float {
@@ -113,7 +132,7 @@ a {
 position: relative;
 flex-wrap: wrap;
 align-items: center;
-background: #474747;
+background: #545d7ab3;
 width: 300px;
 height: 120px;
 border: 0;
@@ -130,7 +149,7 @@ top: 0;
 left: 0;
 width: 0;
 height: 0;
-border-top: 50px solid #232323;
+border-top: 50px solid #414040;
 border-right: 50px solid transparent;
 }
 
@@ -185,7 +204,7 @@ opacity: 1;
 }
 
 .section {
-    background-color: #daaaf0;
+    background-color: #f3e3ebad;
     color: #00102A;
     margin-left: 80px;
     margin-right: 80px;
@@ -202,10 +221,16 @@ opacity: 1;
 }
 
 .section h1{
- background-color: #6686a4;
-
+ background-color: #9eabe9b2;
+ font-family: 'Open Sans Condensed', sans-serif;
 }
+
 /*SECTION 3*/
+#project p {
+	text-align: left;
+  text-align: justify;
+}	
+
 .btn {
   line-height: 50px;
   height: 50px;
@@ -213,9 +238,16 @@ opacity: 1;
   width: 250px;
   cursor: pointer;
   font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #545d7ab3;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  border-radius: 10px;
 }
 .btn-one {
-  color: rgb(15, 11, 74);
+  color: rgb(255, 255, 255);
   transition: all 0.3s;
   position: relative;
   text-decoration: none;
@@ -257,12 +289,13 @@ opacity: 1;
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.025);
 }
 .btn-one:hover::after {
   opacity: 0; 
   transform: scale(0.1, 1);
 }
+
 /* SECTION 4*/
 .Lcard {
   margin: 3px;
@@ -350,6 +383,7 @@ opacity: 1;
     border-radius: 4px;
     background-color: whitesmoke;
     margin-bottom: 0.5em;
+    
 }
 .skill-bar {
     display: block;
@@ -458,6 +492,10 @@ opacity: 1;
     opacity: 1;
     }
 
+    .card h3{
+    font-size: smaller;
+      }
+
 /*SECTION 3 FOR MOBILE VIEW*/
 .Lcard {
   width: 100%;
@@ -498,5 +536,10 @@ opacity: 1;
   color: #545d7a;
   font-size: x-small;
 }
+
+.skill-name {
+font-size: smaller;
+}
+
 
 }
