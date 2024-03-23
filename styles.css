@@ -242,6 +242,12 @@ opacity: 1;
 }
 
 /*SECTION 3*/
+#work ul, p{
+	text-align: left;
+  text-align: justify;
+}	
+
+/*SECTION 3*/
 #project p {
 	text-align: left;
   text-align: justify;
